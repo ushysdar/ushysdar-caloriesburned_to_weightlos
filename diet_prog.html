@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>diet_prog</title>
+
+
+<script type="text/javascript"> 
+
+
+function weight_loss()
+{
+	var calories_burnt = parseInt(document.getElementById("cal").value)
+    var temp = calories_burnt/9000
+	document.getElementById("Output").innerHTML = "You lost " + temp.toFixed(2) + "kg"
+}
+
+</script>
+
+</head>
+
+
+
+<body style="font-family: -apple-system, BlinkMacSystemFont, sans-serif;background-image: url('gradient_background.png');
+font-size: 48px">
+
+<div style="text-align: center">
+<div style="border: 0px solid black;width: 350px;background: #FFFFFF;
+box-shadow: 0 32px 20px -15px rgba(4,22,87,0.09);
+border-radius: 20px;display: inline-block; padding-top: 4%">
+	<b>Calories burnt:</b> <input type="text" name="calories_burnt" id="cal" style="width: 242px;height: 58px;
+border-radius: 29px; border-style: 0.1px solid black">
+
+<button onclick="weight_loss()" style="background: #FFCF54; font-size: 18px; width: 242px;height: 58px;
+border-radius: 29px;border-style: none;">Calculate weight loss</button>
+
+<h2> <b id="Output"></b></h2>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
